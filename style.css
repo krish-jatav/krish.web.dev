@@ -70,10 +70,18 @@
         left: 50%;
         top: 45%;
         transform: translate(-50%, -50%);
-        background-image: url(/assets/images/Snapchat-467590191.jpg);
+        /* background-image: url(/assets/images/Snapchat-467590191.jpg); */
         background-size: cover;
         object-fit: cover;
         background-position: center;
+        overflow: hiddengit;
+    }
+    
+    .profile img {
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
     
     .left {
