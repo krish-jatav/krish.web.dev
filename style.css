@@ -1,0 +1,260 @@
+    @font-face {
+        font-family: poppins;
+        src: url(./font/Poppins-Light.ttf);
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: poppins;
+    }
+    
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+    
+    #main {
+        /* background-color: black; */
+        position: relative;
+    }
+    
+    .nav {
+        height: 100px;
+        width: 100%;
+        /* background-color: blueviolet; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10vw;
+        border-bottom: 2px solid #000;
+    }
+    
+    .nav-part-2 {
+        display: flex;
+        gap: 4vw;
+        align-items: center;
+    }
+    
+    .nav h2 {
+        font-size: 2vw;
+    }
+    
+    .nav h4 {
+        font-size: 1.4vw;
+    }
+    
+    .nav i {
+        font-size: 2.5vw;
+        flex-wrap: 800;
+        display: none;
+        color: #ffffff;
+    }
+    
+    #page1 {
+        height: calc(100vh - 100px);
+        width: 100vw;
+        /* background-color: aquamarine; */
+        position: relative;
+        display: flex;
+    }
+    
+    .profile {
+        height: 400px;
+        width: 400px;
+        background-color: #000;
+        border-radius: 20px;
+        position: relative;
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%, -50%);
+        background-image: url(/image/Snapchat-467590191.jpg);
+        background-size: cover;
+        object-fit: cover;
+        background-position: center;
+    }
+    
+    .left {
+        height: 100vh;
+        width: 50vw;
+        background-color: rgb(29, 29, 30);
+        padding: 0 5vw;
+    }
+    
+    .right {
+        height: 100vh;
+        width: 50vw;
+        /* background-color: rgb(193, 193, 252); */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .right h1 {
+        font-size: 3vw;
+        text-align: center;
+        /* margin-top: 20px; */
+        /* padding: 20px 0px; */
+    }
+    
+    .skills {
+        height: 15vw;
+        width: 20vw;
+        /* background-color: black; */
+    }
+    
+    .skills h4 {
+        /* background-color: black; */
+        color: #050505;
+        /* display: inline-block; */
+        font-size: 2vw;
+        text-align: center;
+    }
+    
+    #page2 {
+        min-height: 100vh;
+        width: 100%;
+        background-color: #000000;
+        position: relative;
+        /* padding: 5vh 4vw; */
+    }
+    
+    #page2>h1 {
+        font-size: 3.7vmax;
+        font-weight: 600;
+        font-family: poppins;
+        /* transform: translate(-50%, -50%); */
+        color: #ffffff;
+    }
+    
+    .projects {
+        background-color: #756d6d;
+        /* border: 3px solid #fff; */
+        height: 85vh;
+        /* margin-bottom: 4vmax; */
+        display: flex;
+        border-radius: 10px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .projects img {
+        height: 13vmax;
+        box-shadow: 1px 7px 20px rgba(0, 0, 0, 0.4);
+    }
+    
+    #page3 {
+        min-height: 100vh;
+        width: 100%;
+        background-color: #000000;
+        position: relative;
+        /* padding: 5vh 4vw; */
+    }
+    
+    #intro-div {
+        text-align: center;
+        width: 80%;
+        padding-top: 4vh;
+        /* padding-bottom: 10vh; */
+        /* background-color: red; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #intro-div h1 {
+        word-spacing: 0.2vw;
+        letter-spacing: 0.01vw;
+        font-size: 4.4vw;
+        line-height: 6.3vw;
+        color: #ffffff;
+    }
+    
+    @media (max-width: 600px) {
+        .nav {
+            background-color: rgb(200, 209, 207);
+            color: #000000;
+            padding: 0 5vw;
+            height: 60px;
+        }
+        .nav h2 {
+            font-size: 5vw;
+        }
+        .nav h4 {
+            font-size: 4vw;
+            display: none;
+        }
+        .nav i {
+            display: block;
+            font-size: 6vw;
+            color: #000;
+        }
+        #page1 {
+            height: calc(100vh - 60px);
+            flex-direction: column;
+        }
+        .left {
+            background-color: rgb(0, 0, 0);
+            width: 100vh;
+            height: 50vh;
+        }
+        .right {
+            /* background-color: rgb(193, 117, 17); */
+            width: 100vw;
+            height: 50vh;
+        }
+        .right h1 {
+            font-size: 10vw;
+            text-align: center;
+            /* margin-top: 40px; */
+        }
+        .profile {
+            height: 70vw;
+            width: 50vw;
+            background-color: #000;
+            border-radius: 20px;
+            position: relative;
+            left: 170px;
+            top: 150px;
+        }
+        .skills h4 {
+            color: #050505;
+            /* display: inline-block; */
+            font-size: 6vw;
+            text-align: center;
+        }
+        #page2 {
+            min-height: 100vh;
+            width: 100vw;
+            background-color: #333;
+            position: relative;
+        }
+        #page2>h1 {
+            font-size: 4.4vmax;
+            font-weight: 600;
+            font-family: poppins;
+            /* background-color: red; */
+            position: relative;
+            left: 110px;
+            /* top: -15px; */
+        }
+        #intro-div {
+            text-align: center;
+            width: 90%;
+            padding-top: -20vh;
+            padding-bottom: 8vh;
+            /* background-color: red; */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #intro-div h1 {
+            word-spacing: 0.6vw;
+            letter-spacing: 0.01vw;
+            font-size: 8.2vw;
+            font-weight: 100;
+            line-height: 11.8vw;
+        }
+    }
