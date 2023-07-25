@@ -74,7 +74,7 @@
         background-size: cover;
         object-fit: cover;
         background-position: center;
-        overflow: hiddengit;
+        overflow: hidden;
     }
     
     .profile img {
