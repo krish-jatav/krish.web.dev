@@ -35,7 +35,7 @@ gsap.to(".profile img", {
     scrollTrigger: {
         trigger: ".profile img",
         scroller: "#main",
-        markers: true,
+        // markers: true,
         start: "top -40%",
         end: "top 100%",
         scrub: 2,
@@ -52,7 +52,7 @@ gsap.from("#page2 h1", {
         trigger: " h1",
         scroller: "#main",
         start: "top 90%",
-        markers: "true",
+        // markers: "true",
         scrub: "true",
     },
 });
@@ -67,7 +67,7 @@ gsap.from(".projects img", {
         trigger: ".projects img",
         scroller: "#main",
         start: "top 90%",
-        markers: "true",
+        // markers: "true",
         scrub: "5",
     },
 });
