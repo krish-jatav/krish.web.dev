@@ -26,3 +26,48 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
+
+gsap.to(".profile img", {
+    sacle: "1",
+    duration: 1,
+    opacity: 0,
+    delay: 0.1,
+    scrollTrigger: {
+        trigger: ".profile img",
+        scroller: "#main",
+        markers: true,
+        start: "top -40%",
+        end: "top 100%",
+        scrub: 2,
+    },
+
+})
+gsap.from("#page2 h1", {
+    duration: "2",
+    opacity: "0",
+    // delay: ".2"
+    scale: "0",
+    y: 100,
+    scrollTrigger: {
+        trigger: " h1",
+        scroller: "#main",
+        start: "top 90%",
+        markers: "true",
+        scrub: "true",
+    },
+});
+gsap.from(".projects img", {
+    duration: "1",
+    opacity: "0",
+    delay: ".2",
+    scale: "0",
+    stagger: "1",
+    x: "-100",
+    scrollTrigger: {
+        trigger: ".projects img",
+        scroller: "#main",
+        start: "top 90%",
+        markers: "true",
+        scrub: "5",
+    },
+});

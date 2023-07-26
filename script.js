@@ -1,29 +1,37 @@
-gsap.from(".nav-prt-1 h1", {
+gsap.from(".nav-part-2 h4", {
+    // scale: "0",
+    opacity: "0",
+    delay: "0.2",
+    duration: ".5",
+    stagger: "1",
+    y: -100,
+});
+gsap.from(".nav h2", {
     scale: "0",
     opacity: "0",
     delay: "0.2",
-    duration: "0.10",
+    duration: ".5",
     stagger: "1",
 });
-gsap.from(".profile", {
-    x: "-100",
-    scrollTrigger: {
-        trigger: ".profile",
-        scroller: "#main",
-        markers: true,
-        start: "top 60%"
-    },
-    duration: 1,
-    opacity: 0
-})
+
 gsap.from(".right h1", {
-    y: "-100",
-    scrollTrigger: {
-        trigger: ".right h1",
-        scroller: "#main",
-        markers: true,
-        start: "top 60%"
-    },
-    duration: 1,
-    opacity: 0
-})
+        duration: "10",
+        delay: "3",
+        onstart: function() {
+            $('.right h1').textillate({ in: { effect: 'wobble' } });
+
+        }
+    })
+    // gsap.to(".projects .hii", {
+    //     duration: "2",
+    //     opacity: "0",
+    //     delay: ".2",
+    //     scale: "0",
+    //     scrollTrigger: {
+    //         trigger: ".projects .hii ",
+    //         scroller: "#main",
+    //         start: "top 60%",
+    //         markers: "true",
+    //         scrub: "true",
+    //     },
+    // });
