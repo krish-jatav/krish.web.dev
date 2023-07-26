@@ -43,17 +43,17 @@ gsap.to(".profile img", {
 
 })
 gsap.from("#page2 h1", {
-    duration: "2",
+    duration: "5",
     opacity: "0",
     // delay: ".2"
-    scale: "0",
+    // scale: "0",
     y: 100,
     scrollTrigger: {
-        trigger: " h1",
+        trigger: "#page2 h1",
         scroller: "#main",
         start: "top 90%",
         // markers: "true",
-        scrub: "true",
+        scrub: "1",
     },
 });
 gsap.from(".projects img", {

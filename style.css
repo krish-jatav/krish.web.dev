@@ -1,6 +1,6 @@
 @font-face {
     font-family: rice;
-    src: url(./font/Beatrice-Medium.woff2);
+    src: url(./font/Poppins-Light.ttf);
 }
 
 * {
@@ -37,7 +37,7 @@ body {
     justify-content: space-between;
     padding: 0 10vw;
     border-bottom: 2px solid #3c3c3c;
-    color: #bfbfbf;
+    color: #DCFF7E;
 }
 
 .nav-part-2 {
@@ -144,7 +144,7 @@ body {
     font-weight: 600;
     font-family: poppins;
     /* transform: translate(-50%, -50%); */
-    color: #ffffff;
+    color: #DCFF7E;
     position: relative;
 }
 
@@ -174,9 +174,9 @@ body {
 }
 
 #intro-div {
-    text-align: center;
+    /* text-align: center; */
     width: 80%;
-    padding-top: 4vh;
+    /* padding-top: 25vh; */
     /* padding-bottom: 10vh; */
     /* background-color: red; */
     margin-left: auto;
@@ -186,9 +186,27 @@ body {
 #intro-div h1 {
     word-spacing: 0.2vw;
     letter-spacing: 0.01vw;
-    font-size: 4.4vw;
-    line-height: 6.3vw;
+    font-size: 1.8vw;
+    /* line-height: 6.3vw; */
     color: #ffffff;
+    font-weight: 100;
+}
+
+#intro-div h2 {
+    word-spacing: 0.2vw;
+    letter-spacing: 0.01vw;
+    font-size: 4.4vw;
+    /* line-height: 30.3vw; */
+    color: #DCFF7E;
+    font-weight: 600;
+}
+
+#page4 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+    /* padding: 5vh 4vw; */
 }
 
 @media (max-width: 600px) {
@@ -259,27 +277,28 @@ body {
         font-weight: 600;
         font-family: poppins;
         /* background-color: red; */
-        position: re;
-        /* left: 110px; */
+        left: 90px;
         /* top: -15px; */
-        transform: translate(-50%, -50%);
-        top: 10%;
-        left: 50%;
+        /* transform: translate(-50%, -50%); */
+        /* top: 10%; */
+        /* left: 50%; */
+        position: relative;
     }
     #intro-div {
         text-align: center;
         width: 90%;
-        padding-top: -20vh;
-        padding-bottom: 8vh;
+        /* padding-top: -20vh; */
+        /* padding-bottom: 8vh; */
         /* background-color: red; */
         margin-left: auto;
         margin-right: auto;
     }
     #intro-div h1 {
         word-spacing: 0.6vw;
-        letter-spacing: 0.01vw;
-        font-size: 8.2vw;
+        /* letter-spacing: 0.01vw; */
+        font-size: 5.2vw;
         font-weight: 100;
-        line-height: 11.8vw;
+        /* line-height: 11.8vw; */
+        /* padding-bottom: 20vh; */
     }
 }
