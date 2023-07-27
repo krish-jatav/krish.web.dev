@@ -3,6 +3,11 @@
     src: url(./font/Poppins-Light.ttf);
 }
 
+@font-face {
+    font-family: logo;
+    src: url(./font/Anurati-Regular.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -48,6 +53,9 @@ body {
 
 .nav h2 {
     font-size: 2vw;
+    font-family: logo;
+    letter-spacing: 1vw;
+    color: rgb(255, 240, 103);
 }
 
 .nav h4 {
@@ -106,14 +114,15 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
-    color: #c2c2c2;
+    /* align-items: center; */
+    color: #747474;
+    padding: 0vw 5vw;
 }
 
 .right h1 {
-    font-size: 3vw;
+    font-size: 4vw;
     text-align: center;
-    /* margin-top: 20px; */
+    margin-top: -80px;
     /* padding: 20px 0px; */
 }
 
@@ -125,7 +134,7 @@ body {
 
 .skills h4 {
     /* background-color: black; */
-    color: #050505;
+    color: #e6e2e2;
     /* display: inline-block; */
     font-size: 2vw;
     text-align: center;
@@ -144,8 +153,9 @@ body {
     font-weight: 600;
     font-family: poppins;
     /* transform: translate(-50%, -50%); */
-    color: #DCFF7E;
+    color: #88a539;
     position: relative;
+    text-decoration: underline;
 }
 
 .projects {
@@ -170,35 +180,73 @@ body {
     width: 100%;
     background-color: #000000;
     position: relative;
-    /* padding: 5vh 4vw; */
+    /* padding: 10vh 4vw; */
 }
 
-#intro-div {
-    /* text-align: center; */
-    width: 80%;
-    /* padding-top: 25vh; */
-    /* padding-bottom: 10vh; */
-    /* background-color: red; */
+#intro-div img {
+    height: 7vmax;
+    /* box-shadow: 1px 0px 15px rgb(137, 132, 132); */
+    padding: 0vw 1vw;
+}
+
+
+/* #intro-div h3 {
+    text-align: center;
+    width: 80vw;
+    padding-top: 25vh;
+    padding-bottom: 10vh;
+    background-color: red;
     margin-left: auto;
     margin-right: auto;
-}
+    display: flex;
+    justify-content: center;
+    display: inline;
+} */
 
-#intro-div h1 {
+#page3 h1 {
     word-spacing: 0.2vw;
     letter-spacing: 0.01vw;
-    font-size: 1.8vw;
+    font-size: 5.8vw;
     /* line-height: 6.3vw; */
     color: #ffffff;
-    font-weight: 100;
+    /* font-weight: 600;     */
+    position: relative;
+    /* top: 100px; */
+    left: 660px;
+    border-bottom: 10px solid rgb(74, 255, 135);
+    width: 15vw;
+    text-align: center;
 }
 
 #intro-div h2 {
     word-spacing: 0.2vw;
     letter-spacing: 0.01vw;
     font-size: 4.4vw;
-    /* line-height: 30.3vw; */
+    /* line-height: 10.3vw; */
     color: #DCFF7E;
     font-weight: 600;
+    /* text-decoration: underline; */
+    /* background-color: #e5e0e0; */
+    width: 10vw;
+    height: 6vw;
+    border-bottom: 10px solid #88a539;
+    text-align: center;
+    /* text-align: center; */
+}
+
+#intro-div {
+    background-color: #000000;
+    /* border: 3px solid #fff; */
+    height: 30vh;
+    /* margin-bottom: 4vmax; */
+    display: inline-block;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0vw 20vw; */
+    width: 100vw;
+    display: flex;
 }
 
 #page4 {
@@ -211,13 +259,14 @@ body {
 
 @media (max-width: 600px) {
     .nav {
-        background-color: rgb(200, 209, 207);
+        background-color: rgb(0, 0, 0);
         color: #000000;
         padding: 0 5vw;
         height: 60px;
     }
     .nav h2 {
         font-size: 5vw;
+        color: #DCFF7E;
     }
     .nav h4 {
         font-size: 4vw;
@@ -226,7 +275,7 @@ body {
     .nav i {
         display: block;
         font-size: 6vw;
-        color: #000;
+        color: #DCFF7E;
     }
     #page1 {
         height: calc(100vh - 60px);
@@ -243,9 +292,9 @@ body {
         height: 50vh;
     }
     .right h1 {
-        font-size: 10vw;
+        font-size: 12vw;
         text-align: center;
-        /* margin-top: 40px; */
+        margin-top: 0px;
     }
     .right span h1 {
         font-family: poppins;
@@ -261,7 +310,7 @@ body {
         position: relative;
     }
     .skills h4 {
-        color: #050505;
+        color: #e5e0e0;
         /* display: inline-block; */
         font-size: 6vw;
         text-align: center;
@@ -277,7 +326,7 @@ body {
         font-weight: 600;
         font-family: poppins;
         /* background-color: red; */
-        left: 90px;
+        left: 70px;
         /* top: -15px; */
         /* transform: translate(-50%, -50%); */
         /* top: 10%; */
@@ -286,19 +335,70 @@ body {
     }
     #intro-div {
         text-align: center;
-        width: 90%;
-        /* padding-top: -20vh; */
-        /* padding-bottom: 8vh; */
+        width: 90vw;
+        padding-top: 0vh;
+        padding-bottom: 1vh;
         /* background-color: red; */
         margin-left: auto;
         margin-right: auto;
+        height: 20vh;
     }
-    #intro-div h1 {
+    #page3 {
+        min-height: 100vh;
+        width: 100vw;
+        background-color: #000000;
+        position: relative;
+    }
+    #page3 h1 {
         word-spacing: 0.6vw;
         /* letter-spacing: 0.01vw; */
-        font-size: 5.2vw;
+        font-size: 10.2vw;
         font-weight: 100;
         /* line-height: 11.8vw; */
         /* padding-bottom: 20vh; */
+        color: aliceblue;
+        position: relative;
+        left: 39vw;
+        width: 25vw;
+        border-bottom: 3px solid rgb(74, 255, 135);
+    }
+    #intro-div img {
+        height: 9vmax;
+        /* box-shadow: 1px 0px 15px rgb(137, 132, 132); */
+        padding: 0vw 2vw;
     }
 }
+
+#circle {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(255, 254, 252);
+    position: absolute;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    z-index: 99999;
+    transition: all linear 0.2s;
+    /* animation-name: ball;
+    transition: all linear 0.2s;
+    border: 2px solid rgb(255, 255, 255);
+    animation-timing-function: linear 0.5s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    transition: all 0.3s ease-out;
+    animation: bounce 0.7s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-self: center; */
+    /* overflow: hidden; */
+}
+
+
+/* @keyframes ball {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.5);
+    }
+} */

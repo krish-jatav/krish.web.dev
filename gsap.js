@@ -47,11 +47,11 @@ gsap.from("#page2 h1", {
     opacity: "0",
     // delay: ".2"
     // scale: "0",
-    y: 100,
+    y: -100,
     scrollTrigger: {
         trigger: "#page2 h1",
         scroller: "#main",
-        start: "top 90%",
+        start: "top 80%",
         // markers: "true",
         scrub: "1",
     },
@@ -71,3 +71,7 @@ gsap.from(".projects img", {
         scrub: "5",
     },
 });
+document.addEventListener("mousemove", function(dets) {
+    document.querySelector("#circle").style.left = `${dets.x + 15  }px`
+    document.querySelector("#circle").style.top = `${dets.y + 15 }px`
+})
