@@ -343,7 +343,7 @@ body {
     .right h1 {
         font-size: 12vw;
         text-align: center;
-        margin-top: 0px;
+        /* margin-bottom: 1vh; */
     }
     .right span h1 {
         font-family: poppins;
@@ -394,6 +394,15 @@ body {
         margin-right: auto;
         height: 20vh;
     }
+    #intro-div h2 {
+        word-spacing: 0.2vw;
+        letter-spacing: 0.01vw;
+        font-size: 5.4vw;
+        color: #91928e;
+        font-weight: 100;
+        text-align: center;
+        /* text-align: center; */
+    }
     /* #page3 {
         min-height: 100vh;
         width: 100vw;
@@ -407,6 +416,7 @@ body {
         color: aliceblue;
         position: relative;
         border-bottom: 3px solid rgb(74, 255, 135);
+        top: 10vh;
     }
     #intro-div img {
         height: 9vmax;
