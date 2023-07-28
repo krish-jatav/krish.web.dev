@@ -212,7 +212,7 @@ body {
 .projects img {
     height: 15vmax;
     box-shadow: 1px 0px 15px rgb(39, 38, 38);
-    padding: 10px 0px;
+    /* padding: 10px 0px; */
 }
 
 #page3 {
@@ -253,7 +253,7 @@ body {
     position: relative;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 5%;
+    top: 15%;
     width: 15vw;
 }
 
@@ -271,7 +271,7 @@ body {
     font-size: 3vw;
     text-align: center;
     /* margin-top: -80px; */
-    padding: 12vw 5vw;
+    padding: 30vw 5vh;
     color: #bbbbb0;
 }
 
@@ -288,7 +288,7 @@ body {
     height: 100vh;
     width: 100vw;
     /* background-color: rgb(69, 56, 56); */
-    /* padding: 0 5vw; */
+    /* padding: 0 3vw; */
 }
 
 #ryt {
@@ -300,7 +300,7 @@ body {
     /* flex-direction: column; */
     /* align-items: center; */
     color: #747474;
-    padding: 0vw 5vw;
+    /* padding: 0vw 5vw; */
 }
 
 .p3-img {
@@ -318,7 +318,7 @@ body {
     overflow: hidden;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
-    padding-top: 50px;
+    /* padding-top: 50px; */
 }
 
 .p3-img img {
@@ -441,8 +441,9 @@ body {
         color: aliceblue;
         position: relative;
         border-bottom: 3px solid rgb(74, 255, 135);
-        top: -1vh;
+        /* top: -1vh; */
         width: 30vw;
+        z-index: 99;
     }
     /* #intro-div img {
         height: 9vmax;
