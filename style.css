@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: pop;
+    src: url(./font/Poppins-Medium.ttf);
+}
+
+@font-face {
     font-family: logo;
     src: url(./font/Anurati-Regular.otf);
 }
@@ -205,24 +210,17 @@ body {
 }
 
 .projects img {
-    height: 13vmax;
-    box-shadow: 1px 0px 15px rgb(137, 132, 132);
+    height: 15vmax;
+    box-shadow: 1px 0px 15px rgb(39, 38, 38);
+    padding: 10px 0px;
 }
 
 #page3 {
-    min-height: 100vh;
+    height: 100vh;
     width: 100vw;
-    background-color: #000000;
+    /* background-color: aquamarine; */
     position: relative;
-    /* padding: 10vh 4vw; */
-    justify-content: center;
-    display: flex;
-}
-
-#intro-div img {
-    height: 7vmax;
-    /* box-shadow: 1px 0px 15px rgb(137, 132, 132); */
-    padding: 0vw 1vw;
+    /* display: flex; */
 }
 
 
@@ -249,59 +247,91 @@ body {
     /* position: relative; */
     /* top: 100px; */
     /* left: 660px; */
-    border-bottom: 10px solid rgb(74, 255, 135);
+    border-bottom: 5px solid rgb(74, 255, 135);
     /* width: 15vw; */
-    /* text-align: center; */
+    text-align: center;
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 5%;
+    width: 15vw;
+}
+
+.center {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    position: relative;
 }
 
 #intro-div h2 {
-    word-spacing: 0.2vw;
-    letter-spacing: 0.01vw;
-    font-size: 2.4vw;
-    color: #91928e;
-    font-weight: 100;
+    font-size: 3vw;
     text-align: center;
-    /* text-align: center; */
-    margin-top: 100px;
+    /* margin-top: -80px; */
+    padding: 12vw 5vw;
+    color: #bbbbb0;
 }
 
-#intro-div h3 {
-    word-spacing: 0.2vw;
-    letter-spacing: 0.01vw;
-    font-size: 1.4vw;
-    color: #DCFF7E;
-    font-weight: 600;
-    border-bottom: 10px solid #88a539;
-    text-align: center;
-    /* text-align: center; */
-}
 
-#intro-div i {
-    color: #88a539;
-    font-size: 4vw;
-    padding: 40px 30px;
-}
+/* #intro-div i {
+            color: #88a539;
+            font-size: 3vw;
+            padding: 50px 50px;
+            position: relative;
+            top: -100px;
+        } */
 
 #intro-div {
-    /* background-color: #8c7a7a; */
-    /* border: 3px solid #fff; */
-    height: 30vh;
-    /* margin-bottom: 4vmax; */
-    /* display: inline-block; */
-    border-radius: 10px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 0vw 20vw;
-    width: 76vw;
-    display: flex;
-    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: rgb(69, 56, 56); */
+    /* padding: 0 5vw; */
+}
+
+#ryt {
+    height: 100vh;
+    width: 100vw;
+    /* background-color: rgb(173, 128, 128); */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    color: #747474;
+    padding: 0vw 5vw;
+}
+
+.p3-img {
+    height: 479px;
+    width: 400px;
+    background-color: #000;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* background-image: url(/assets/images/Snapchat-467590191.jpg); */
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    overflow: hidden;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    padding-top: 50px;
+}
+
+.p3-img img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
 }
 
 #page4 {
     min-height: 100vh;
     width: 100%;
-    background-color: #000000;
+    background-color: #554e4e;
     position: relative;
     /* padding: 5vh 4vw; */
 }
@@ -384,24 +414,20 @@ body {
         /* background-color: #d1d12d; */
         text-align: center;
     }
-    #intro-div {
+    /* #intro-div {
+                text-align: center;
+                width: 90vw;
+                padding-top: 0vh;
+                padding-bottom: 1vh;
+                background-color: red;
+                margin-left: auto;
+                margin-right: auto;
+                height: 100vh;
+            } */
+    .right h1 {
+        font-size: 12vw;
         text-align: center;
-        width: 90vw;
-        padding-top: 0vh;
-        padding-bottom: 1vh;
-        /* background-color: red; */
-        margin-left: auto;
-        margin-right: auto;
-        height: 20vh;
-    }
-    #intro-div h2 {
-        word-spacing: 0.2vw;
-        letter-spacing: 0.01vw;
-        font-size: 5.4vw;
-        color: #91928e;
-        font-weight: 100;
-        text-align: center;
-        /* text-align: center; */
+        /* margin-bottom: 1vh; */
     }
     /* #page3 {
         min-height: 100vh;
@@ -410,19 +436,19 @@ body {
         position: relative;
     } */
     #page3 h1 {
-        word-spacing: 0.6vw;
-        font-size: 10.2vw;
+        font-size: 6.2vw;
         font-weight: 100;
         color: aliceblue;
         position: relative;
         border-bottom: 3px solid rgb(74, 255, 135);
-        top: 10vh;
+        top: -1vh;
+        width: 30vw;
     }
-    #intro-div img {
+    /* #intro-div img {
         height: 9vmax;
-        /* box-shadow: 1px 0px 15px rgb(137, 132, 132); */
+        box-shadow: 1px 0px 10px rgb(16, 15, 15);
         padding: 0vw 2vw;
-    }
+    } */
     .skil {
         font-size: 2vw;
         display: flex;
@@ -438,14 +464,39 @@ body {
         color: #d1d12d;
         transition: linear 0.3s;
     }
-    #page3 {
-        min-height: 100vh;
-        width: 100vw;
-        background-color: #000000;
+    .center {
+        flex-direction: column;
+    }
+    .p3-img {
+        height: 70vw;
+        width: 50vw;
+        background-color: #000;
+        border-radius: 20px;
+        transform: translate(-50%, -50%);
+        left: 46vw;
+        top: 50%;
         position: relative;
-        /* padding: 10vh 4vw; */
-        justify-content: center;
-        display: flex;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+    #intro-div i {
+        color: #92938e;
+        font-size: 4vw;
+    }
+    .ryt {
+        background-color: rgb(0, 0, 0);
+        width: 100vw;
+        height: 50vh;
+    }
+    #intro-div {
+        /* background-color: rgb(193, 117, 17); */
+        width: 100vw;
+        height: 50vh;
+    }
+    #intro-div h2 {
+        font-size: 6vw;
+        text-align: center;
+        /* margin-bottom: 1vh; */
     }
 }
 
