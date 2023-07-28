@@ -28,34 +28,34 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
 
 gsap.to(".profile img", {
-    sacle: "1",
-    duration: 1,
-    opacity: 0,
-    delay: 0.1,
-    scrollTrigger: {
-        trigger: ".profile img",
-        scroller: "#main",
-        // markers: true,
-        start: "top -40%",
-        end: "top 100%",
-        scrub: 2,
-    },
+        sacle: "1",
+        duration: 1,
+        opacity: 0,
+        delay: 0.1,
+        scrollTrigger: {
+            trigger: ".profile img",
+            scroller: "#main",
+            // markers: true,
+            start: "top -40%",
+            end: "top 100%",
+            scrub: 2,
+        },
 
-})
-gsap.from("#page2 h1", {
-    duration: "5",
-    opacity: "0",
-    // delay: ".2"
-    // scale: "0",
-    y: -100,
-    scrollTrigger: {
-        trigger: "#page2 h1",
-        scroller: "#main",
-        start: "top 80%",
-        // markers: "true",
-        scrub: "1",
-    },
-});
+    })
+    // gsap.from("#page2 h1", {
+    //     duration: "5",
+    //     opacity: "0",
+    //     // delay: ".2"
+    //     // scale: "0",
+    //     y: -100,
+    //     scrollTrigger: {
+    //         trigger: "#page2 h1",
+    //         scroller: "#main",
+    //         start: "top 80%",
+    //         // markers: "true",
+    //         scrub: "1",
+    //     },
+    // });
 gsap.from(".projects img", {
     duration: "1",
     opacity: "0",
