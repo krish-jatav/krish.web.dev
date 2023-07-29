@@ -98,7 +98,7 @@
             object-fit: cover;
             background-position: center;
             overflow: hidden;
-            box-shadow: 0px 0px 10px rgb(255, 255, 94);
+            box-shadow: 0px 0px 50px rgb(101, 101, 100);
         }
         
         .profile img {
@@ -224,24 +224,13 @@
         }
         
         #page3 {
-            height: 100vh;
+            height: 80vh;
             width: 100vw;
             /* background-color: aquamarine; */
             position: relative;
             /* display: flex; */
+            text-align: center;
         }
-        /* #intro-div h3 {
-    text-align: center;
-    width: 80vw;
-    padding-top: 25vh;
-    padding-bottom: 10vh;
-    background-color: red;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-    display: inline;
-} */
         
         #page3 h1 {
             font-size: 2.8vw;
@@ -257,7 +246,7 @@
             position: relative;
             transform: translate(-50%, -50%);
             left: 50%;
-            top: 0%;
+            top: 10%;
             width: 15vw;
             z-index: 999;
         }
@@ -276,29 +265,15 @@
         
         #intro-div h2 {
             font-size: 1.7vw;
-            /* text-align: center; */
-            /* margin-top: 100px; */
-            /* padding: 0vw 5vh; */
             color: #bbbbb0;
-            /* background-color: #656521; */
-            /* height: 30vh; */
-            /* line-height: 50px; */
-            padding-left: 60px;
-            padding-right: 60px;
+            padding-left: 5px;
+            padding-right: 5px;
             font-family: rice;
         }
-        /* #intro-div i {
-    color: #88a539;
-    font-size: 3vw;
-    padding: 50px 50px;
-    position: relative;
-    top: 0px;
-    flex-direction: column;
-} */
         
         #intro-div {
             height: 60vh;
-            width: 100vw;
+            width: 50vw;
             /* background-color: rgb(69, 56, 56); */
             /* padding: 0 3vw; */
             display: flex;
@@ -309,20 +284,15 @@
         #ryt {
             height: 60vh;
             width: 100vw;
-            /* background-color: rgb(173, 128, 128); */
-            /* display: flex; */
-            /* justify-content: center; */
-            /* flex-direction: column; */
-            /* align-items: center; */
             color: #747474;
         }
         
         .p3-img {
-            height: 400px;
+            height: 300px;
             width: 400px;
             background-color: #1d1c1c;
             position: relative;
-            left: 50%;
+            left: 60%;
             top: 50%;
             transform: translate(-50%, -50%);
             /* background-image: url(/assets/images/Snapchat-467590191.jpg); */
@@ -331,7 +301,8 @@
             background-position: center;
             overflow: hidden;
             /* padding-top: 50px; */
-            box-shadow: 10px 10px 10px rgb(134, 64, 39);
+            box-shadow: 0px 0px 30px rgb(54, 53, 53);
+            border-radius: 20px;
         }
         
         .p3-img img {
@@ -339,6 +310,7 @@
             width: 100%;
             background-size: cover;
             object-fit: cover;
+            overflow: hidden;
         }
         
         @media (max-width: 600px) {
@@ -419,32 +391,11 @@
                 /* background-color: #d1d12d; */
                 text-align: center;
             }
-            /* #intro-div {
-                text-align: center;
-                width: 90vw;
-                padding-top: 0vh;
-                padding-bottom: 1vh;
-                background-color: red;
-                margin-left: auto;
-                margin-right: auto;
-                height: 100vh;
-            } */
             .right h1 {
                 font-size: 12vw;
                 text-align: center;
                 /* margin-bottom: 1vh; */
             }
-            /* #page3 {
-        min-height: 100vh;
-        width: 100vw;
-        background-color: #000000;
-        position: relative;
-    } */
-            /* #intro-div img {
-        height: 9vmax;
-        box-shadow: 1px 0px 10px rgb(16, 15, 15);
-        padding: 0vw 2vw;
-    } */
             .skil {
                 font-size: 2vw;
                 display: flex;
@@ -460,6 +411,11 @@
                 color: #d1d12d;
                 transition: linear 0.3s;
             }
+            #page3 {
+                max-height: 100vh;
+                width: 100vw;
+                background-color: #000000;
+            }
         }
         
         @media (max-width: 600px) {
@@ -472,7 +428,7 @@
                 /* top: -1vh; */
                 width: 30vw;
                 z-index: 99;
-                margin-top: 100px;
+                /* margin-top: 100px; */
             }
             .center {
                 flex-direction: column;
@@ -501,10 +457,9 @@
                 height: 50vh;
             }
             #intro-div h2 {
-                font-size: 8vw;
-                text-align: center;
-                /* margin-bottom: 1vh; */
-                padding: 0px 30px;
+                font-size: 7vw;
+                /* text-align: center; */
+                /* padding: 0px 30px; */
             }
             #name-div {
                 width: 100%;
@@ -601,6 +556,11 @@
             font-size: 6vw;
         }
         
+        .contact h2:hover {
+            color: rgb(255, 227, 72);
+            transition: linear 0.5s;
+        }
+        
         a {
             font-size: 5vw;
             text-decoration: none;
@@ -621,8 +581,38 @@
             align-items: center;
         }
         
+        .icon i:hover {
+            color: rgb(255, 227, 72);
+            transition: linear 0.5s;
+        }
+        
         .contact h1 {
             text-align: center;
             font-size: 3vw;
             padding-top: 20px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .contact h2 {
+                font-size: 12vw;
+            }
+            a {
+                font-size: 8vw;
+                padding: 8px 16px;
+            }
+            .contact h1 {
+                text-align: center;
+                font-size: 7vw;
+                padding-top: 20px;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .contact h2 {
+                font-size: 14vw;
+            }
+            a {
+                font-size: 10vw;
+                padding: 6px 12px;
+            }
         }
