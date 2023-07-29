@@ -292,7 +292,7 @@
             width: 400px;
             background-color: #1d1c1c;
             position: relative;
-            left: 60%;
+            left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
             /* background-image: url(/assets/images/Snapchat-467590191.jpg); */
@@ -480,7 +480,7 @@
                 display: inline-block;
             }
             #page4 {
-                max-height: 40vh;
+                max-height: 50vh;
                 width: 100vw;
                 background-color: #000000;
             }
