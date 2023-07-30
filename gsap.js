@@ -75,3 +75,75 @@ document.addEventListener("mousemove", function(dets) {
     document.querySelector("#circle").style.left = `${dets.x + 15  }px`
     document.querySelector("#circle").style.top = `${dets.y + 15 }px`
 })
+gsap.from(".p3-img img", {
+    duration: "2",
+    opacity: "0",
+    delay: ".2",
+    scale: "0",
+    scrollTrigger: {
+        trigger: ".p3-img img ",
+        scroller: "#main",
+        start: "top 90%",
+        end: "top 80%",
+        // markers: "true",
+        scrub: "true",
+    },
+});
+gsap.from(".contact h2", {
+    duration: "2",
+    opacity: "0",
+    delay: ".2",
+    scale: "0",
+    stagger: "1",
+    scrollTrigger: {
+        trigger: ".contact h2 ",
+        scroller: "#main",
+        start: "top 90%",
+        end: "top 20%",
+        // markers: "true",
+        scrub: "true",
+    },
+});
+gsap.from(".contact i", {
+    duration: "2",
+    opacity: "0",
+    delay: ".2",
+    scale: "0",
+    stagger: "1",
+    scrollTrigger: {
+        trigger: ".contact i ",
+        scroller: "#main",
+        start: "top 90%",
+        end: "top 80%",
+        // markers: "true",
+        scrub: "true",
+    },
+});
+gsap.from(".contact h1", {
+    duration: "3",
+    opacity: "0",
+    delay: ".2",
+    scale: "0",
+    stagger: "1",
+    scrollTrigger: {
+        trigger: ".contact h1 ",
+        scroller: "#main",
+        start: "top 90%",
+        end: "top 85%",
+        // markers: "true",
+        scrub: "true",
+    },
+});
+gsap.from("#intro-div h2", {
+    duration: "4",
+    opacity: "0",
+    scale: "0",
+    scrollTrigger: {
+        trigger: "#intro-div h2 ",
+        scroller: "#main",
+        start: "top 90%",
+        end: "top 100%",
+        // markers: "true",
+        scrub: "1",
+    },
+});
