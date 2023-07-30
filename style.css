@@ -503,6 +503,9 @@ body {
     #loader h3 {
         color: #000000;
         font-size: 8vw;
+        font-family: pop;
+        font-family: 200;
+        border-bottom: 2px solid black;
     }
 }
 
